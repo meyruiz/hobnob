@@ -1,0 +1,33 @@
+{
+  "name": "hobnob",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fix": "eslint src --fix",
+    "lint": "eslint src",
+    "precommit": "yarn run lint",
+    "serve": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon -w src --exec yarn run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/meyruiz/hobnob.git"
+  },
+  "author": "Mayra Ruiz <mey.ruiz27@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meyruiz/hobnob/issues"
+  },
+  "homepage": "https://github.com/meyruiz/hobnob#readme",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^8.0.1",
+    "nodemon": "^2.0.19",
+    "rimraf": "^3.0.2"
+  }
+}
