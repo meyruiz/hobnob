@@ -9,7 +9,6 @@
     "precommit": "yarn run lint",
     "serve": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:e2e": "cucumber-js spec/cucumber/features --require spec/cucumber/steps",
     "watch": "nodemon -w src --exec yarn run serve"
   },
   "repository": {
@@ -22,14 +21,7 @@
     "url": "https://github.com/meyruiz/hobnob/issues"
   },
   "homepage": "https://github.com/meyruiz/hobnob#readme",
-  "type": "module",
   "devDependencies": {
-    "@cucumber/cucumber": "^8.4.0",
-    "eslint": "^7.32.0 || ^8.2.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "husky": "^8.0.1",
-    "nodemon": "^2.0.19",
-    "rimraf": "^3.0.2"
+    "@cucumber/cucumber": "^8.4.0"
   }
 }
