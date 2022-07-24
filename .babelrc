@@ -6,13 +6,10 @@
             }
         }]
     ],
-<<<<<<< HEAD
     "env": {
         "debug": {
             "retainLines": true
         }
     },
-=======
->>>>>>> 3215a49 (Added babel bc cucumber still needs it unfortunately)
     "plugins": []
 }
