@@ -1,12 +1,7 @@
-const superagent = require('superagent');
-const { When, Then } = require('@cucumber/cucumber');
+import { When, Then } from 'cucumber';
 
-let request;
-let result;
-let error;
-
-When('the client creates a POST request to \\/users', function () {
-  request = superagent('POST', 'localhost:8080/users');
+When('the client creates a POST request to \\/users', function (callback) {
+  callback(null, 'pending');
 });
 
 When('attaches a generic empty payload', function () {

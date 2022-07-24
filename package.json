@@ -10,7 +10,7 @@
     "precommit": "yarn run lint",
     "serve": "yarn run build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:e2e": "cucumber-js spec/cucumber/features --require spec/cucumber/steps",
+    "test:e2e": "npx cucumber spec/cucumber/features --require-module @babel/register --require spec/cucumber/steps",
     "watch": "nodemon -w src --exec yarn run serve"
   },
   "repository": {
@@ -28,7 +28,8 @@
     "@babel/core": "^7.18.9",
     "@babel/node": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
-    "@cucumber/cucumber": "^8.4.0",
+    "@babel/register": "^7.18.9",
+    "cucumber": "^6.0.7",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
